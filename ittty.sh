@@ -69,7 +69,7 @@ function load_config() {
         source "$CONFIG_FILE"
     else
         echo "Configuration file not found: $CONFIG_FILE"
-        echo "Please run 'ittty.sh init' to create the configuration"
+        echo "Please run 'ittty.sh init'"
         exit 1
     fi
 }
@@ -79,7 +79,7 @@ function load_credentials() {
         source "$CREDENTIALS_FILE"
     else
         echo "Credentials file not found: $CREDENTIALS_FILE"
-        echo "Please run 'ittty.sh init' to create the credentials"
+        echo "Please run 'ittty.sh init'"
         exit 1
     fi
 }
