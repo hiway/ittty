@@ -7,7 +7,7 @@ Monitor a URL, notify when some text appears on the page.
 ## Install
 
 ```bash
-cp ittty.sh ~/bin/ittty.sh
+curl -s https://raw.githubusercontent.com/hiway/ittty/refs/heads/main/ittty.sh > ~/bin/ittty.sh
 chmod +x ~/bin/ittty.sh
 ```
 
