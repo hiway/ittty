@@ -5,6 +5,7 @@
 # Utility to periodically check a URL and notify using Telegram Bot API
 # when a configured string is seen on the web page.
 #
+#
 # Usage:
 #
 #    ittty.sh init - Configure Telegram Bot API credentials, URL and text to check
