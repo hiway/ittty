@@ -1,9 +1,8 @@
 # ittty
 
-Is The Text There Yet? 
+Is The Text There Yet?
 
 Monitor a URL, notify when some text appears on the page.
-
 
 ## Install
 
@@ -12,43 +11,41 @@ cp ittty.sh ~/bin/ittty.sh
 chmod +x ~/bin/ittty.sh
 ```
 
-
-## Configure 
+## Configure
 
 ```bash
-$ ittty.sh init
+ittty.sh init
 ```
 
 ittty.sh uses Telegram to send notifications.
 
-- Use https://t.me/BotFather to create a new bot and get bot-token
-- Use https://t.me/getidsbot to get your chat-id
-
+- Chat with @BotFather to create a new bot and get bot-token
+- Chat with @getidsbot to get your chat-id
 
 ## Usage
 
 Manually check configured URL for presence of text
 
 ```bash
-$ ittty.sh check
+ittty.sh check
 ```
 
 Add a cron job to check the URL every 60 minutes
 
 ```bash
-$ crontab -e
+crontab -e
+```
 
+```console
 # Add the following line to the crontab
 0 * * * * /home/user/bin/ittty.sh check
 ```
-
 
 ## Notifications
 
 > Once a notification is sent, the script will stop loading the URL.
 
 Run `ittty.sh reset` to start monitoring the URL again.
-
 
 ## Change Configuration
 
