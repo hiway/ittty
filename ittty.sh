@@ -108,8 +108,6 @@ function notify() {
 function check_url_and_notify() {
     if curl -s "$URL" | grep -q "$TEXT"; then
         notify
-    else
-        echo "\"$TEXT\" not found at $URL"
     fi
 }
 
