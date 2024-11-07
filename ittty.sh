@@ -33,8 +33,8 @@ function init() {
         # Ensure directory exists
         mkdir -p "$(dirname "$CREDENTIALS_FILE")"
 
-        echo "Use https://t.me/BotFather to create a new bot and get bot-token"
-        echo "Use https://t.me/getidsbot to get your chat-id"
+        echo "Chat with @BotFather to create a new bot and get bot-token"
+        echo "Chat with @getidsbot to get your chat-id"
         echo ""
         echo "Enter bot-token:"
         read -r BOT_TOKEN
